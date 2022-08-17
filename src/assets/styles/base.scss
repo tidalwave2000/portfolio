@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:ital,wght@0,100;1,100&display=swap");
+* {
+	margin: 0;
+	box-sizing: border-box;
+	&:after,
+	&:before {
+		box-sizing: border-box;
+	}
+}
+html,
+body {
+	overflow-x: hidden;
+}
+// defines the font family tro be use through out the body and its desired font height
+body {
+	font-family: "Poppins", sans-serif;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	
+}
+// the following tag or elements inherit property from the parent(body)
+button,
+input,
+textarea,
+select {
+	font: inherit;
+}
+// the following tags or elements will all control the amount of text overflow in the block
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	overflow-wrap: break-word;
+}
+//set the width of videos, the canvas, and other images to 100 percent so that it won't overflow the pare4nt
+video,
+canvas,
+svg,
+img {
+	max-width: 100%;
+}
+// style for anchor tag
+a {
+	text-decoration: none;
+	color: inherit;
+}
+// hide bullet point for unnumbered list
+ul {
+	list-style: none;
+}
+/*----Variables-----*/
+$green-color: #00b300;
+$light-green-color: #00e600;

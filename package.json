@@ -1,0 +1,24 @@
+{
+	"name": "section-1",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"dev": "parcel src/index.html --open",
+		"build": "parcel build src/index.html"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"@parcel/packager-raw-url": "^2.7.0",
+		"@parcel/transformer-sass": "^2.7.0",
+		"@parcel/transformer-webmanifest": "^2.7.0",
+		"parcel": "^2.7.0"
+	},
+	"dependencies": {
+		"@parcel/core": "^2.7.0",
+		"@parcel/transformer-posthtml": "^2.7.0",
+		"gsap": "^3.10.4"
+	}
+}
