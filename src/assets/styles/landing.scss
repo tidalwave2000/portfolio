@@ -15,7 +15,7 @@
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			width: 100vw;
+			width: 60vw;
 		}
 		&__left {
 			display: flex;
@@ -27,13 +27,34 @@
 				font-weight: bolder;
 			}
 		}
+		@media (max-width: 1200px) {
+			&__wrap {
+				width: 100vw;
+			}
+		}
+		@media (max-width: 650px) {
+			&__sm {
+				display: none;
+			}
+		}
+		@media (max-width: 450px) {
+			& {
+				left: 50%;
+			}
+			&__wrap {
+				gap: 20%;
+			}
+			.coolLink[data-text="Home"] {
+				display: none;
+			}
+		}
 	}
 }
 
 .center_link {
-    position: absolute;
-    font-size: 28px;
-    top: 40%;
-    left: 10%;
-    cursor: pointer;
+	position: absolute;
+	font-size: 40px;
+	top: 40%;
+	left: 10%;
+	cursor: pointer;
 }
