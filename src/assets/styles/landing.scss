@@ -49,6 +49,94 @@
 			}
 		}
 	}
+	.socials {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		bottom: 10rem;
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+	}
+	// scroll down button
+	.scrollDown {
+		position: absolute;
+		bottom: 3rem;
+		left: 50%;
+		transform: translateX(-50%);
+		// scroll down wheel
+		&__wheel {
+			height: 42px;
+			width: 24px;
+			border-radius: 10px;
+			border: 2px solid white;
+			// inner scroll wheel
+			&--inner {
+				position: absolute;
+				left: 10px;
+				margin-top: 5px;
+				width: 4px;
+				height: 4px;
+				background: white;
+				border-radius: 50%;
+				animation: movingwheel 0.5s linear infinite;
+				@keyframes movingwheel {
+					0% {
+						top: 1px;
+					}
+					25% {
+						top: 2px;
+					}
+					50% {
+						top: 3px;
+					}
+					75% {
+						top: 2px;
+					}
+					100% {
+						top: 1px;
+					}
+				}
+			}
+		}
+		.scrollDown__arrows {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			// animate scroll arrows
+			.scrollDown__arrow {
+				width: 20px;
+				height: 15px;
+				border-right: 2px solid white;
+				border-bottom: 2px solid white;
+				transform: rotate(45deg);
+				animation: scrollAnim 1s infinite;
+				// alternate animation
+				animation-direction: alternate;
+				// create delay for each child arrow
+				&:nth-child(1){
+					animation-delay: 0.1s;
+				}
+				&:nth-child(2){
+					animation-delay: 0.2s;
+				}
+				&:nth-child(3){
+					animation-delay: 0.3s;
+				}
+				@keyframes scrollAnim {
+					0% {
+						opacity: 0;
+					}
+					50% {
+						opacity: 0.5;
+					}
+					100% {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
 }
 
 .center_link {
