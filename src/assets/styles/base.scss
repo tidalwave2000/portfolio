@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;1,100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Orbitron&family=Poppins:ital,wght@0,100;1,100&display=swap");
+@import url('http://fonts.cdnfonts.com/css/da-mad-rave');
+@import url('http://fonts.cdnfonts.com/css/neutra-text-light-sc');
 * {
 	margin: 0;
 	box-sizing: border-box;
@@ -14,7 +16,7 @@ body {
 }
 // defines the font family tro be use through out the body and its desired font height
 body {
-	font-family: "Poppins", sans-serif;
+	font-family: 'Neutra Text Light SC', sans-serif;
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 	
