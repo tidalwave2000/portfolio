@@ -19,6 +19,7 @@
 	"dependencies": {
 		"@parcel/core": "^2.7.0",
 		"@parcel/transformer-posthtml": "^2.7.0",
-		"gsap": "^3.10.4"
+		"gsap": "^3.10.4",
+		"swiper": "^8.3.2"
 	}
 }
