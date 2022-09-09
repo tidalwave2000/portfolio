@@ -1,128 +1,122 @@
 @import "./base.scss";
 
 .reviews {
-    position: relative;
-    background: $darkish-blue;
-    color: #fff;
-    &__header {
-        display: flex;
-        align-items: center;
-        gap: 1rem; 
-        .instructor {
-            position: relative;
-            background: #28316013;
-            box-shadow: 0 8px 32px 0 $box-shadow-blue1;
-            //controll the size and position of the instructor picture
-            &__curve {
-                position: absolute;
-                top: -10px;
-                left: 20px;
-                width: 120px;
-                height: 90%;
-                border-left: 2px solid $red-color;
-                border-radius: 50%;
-                // transform: rotate(-20deg);
-                box-shadow: 0 8px 32px 0 $box-shadow-blue2;
-            }
-            // determine the size of the letters in the infos sections
-            &__infos {
-                display: flex;
-                align-items: center;
-                gap: 15px;
-                font-size: 17px;
-                font-family: sans-serif;
+	position: relative;
+	background: $darkish-blue;
+	color: #fff;
+	&__header {
+		display: flex;
+		align-items: center;
+		gap: 1rem;
+		.instructor {
+			position: relative;
+			background: #28316013;
+			box-shadow: 0 8px 32px 0 $box-shadow-blue1;
+			//controll the size and position of the instructor picture
+			&__curve {
+				position: absolute;
+				top: -10px;
+				left: 20px;
+				width: 120px;
+				height: 90%;
+				border-left: 2px solid $red-color;
+				border-radius: 50%;
+				// transform: rotate(-20deg);
+				box-shadow: 0 8px 32px 0 $box-shadow-blue2;
+			}
+			// determine the size of the letters in the infos sections
+			&__infos {
+				display: flex;
+				align-items: center;
+				gap: 15px;
+				font-size: 17px;
+				font-family: sans-serif;
+			}
+			// border around picture
+			&__img {
+				width: 150px;
+				height: 150px;
+				border-radius: 50%;
+				border-right: 2px solid $red-color;
+				background-color: red;
+			}
+			// setup icon to be displayed in a column
+			&__col {
+				display: flex;
+				flex-direction: column;
+				gap: 5px;
+			}
+			// Format the display how the icons will appear in the column
+			&__info {
+				display: flex;
+				align-items: center;
+				gap: 10px;
 
-            }
-            // border around picture
-            &__img {
-                width: 150px;
-                height: 150px;
-                border-radius: 50%;
-                border-right: 2px solid $red-color;
-
-            }
-            // setup icon to be displayed in a column
-            &__col {
-                display: flex;
-                flex-direction: column;
-                gap: 5px;
-            }
-            // Format the display how the icons will appear in the column
-            &__info {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-            
-               
-                // icon size
-                & img {
-                    width: 20px;
-                    height: 20px;
-                    align-items: center;
-                }
-
-            }
-            // used to straighten out the text instead of wrapping around
-            #straight {
-                width: 220px;
-                height: 25px;
-            }
-                
-        }
-
-    }
+				// icon size
+				& img {
+					width: 20px;
+					height: 20px;
+					align-items: center;
+				}
+			}
+			// used to straighten out the text instead of wrapping around
+			#straight {
+				width: 220px;
+				height: 25px;
+			}
+		}
+	}
 }
 .swiper__wrapper {
-    padding: 2rem 0;
+	padding: 2rem 0;
 }
 .swiper {
-    min-height: 500px;
+	min-height: 500px;
 }
 .review {
-    position: relative;
-    display: flex;
-    font-style: 16px;
-    padding: 5px;
-    &__card {
-        position: relative;
-        width: 100%;
-        padding: 2rem 0;
-        display: flex;
-    }
-    & svg {
-        width: 30px;
-        fill: $red-color;
-
-    }
-    &__topborder {
-        width: 100%;
-        height: 1px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: #fff;
-    }
-    &__text {
-        user-select: none;
-        span {
-            font-family: "Haghisty_DEMO", sans-serif;
-        }
-    }
-    &__img {
-        width: 70px;
-        height: 100px;
-        object-fit: cover;
-        border-radius: 35px;
-
-
-    }
-    &__profile {
-        position: absolute;
-        left: 5rem;
-        bottom: -1.5rem;
-        display: flex;
-        flex-direction: column;
-        font-family: "Josefin Sans Std", sans-serif;
-    }
-
+	position: relative;
+	display: flex;
+	font-style: 16px;
+	padding: 5px;
+	&__card {
+		position: relative;
+		width: 100%;
+		padding: 2rem 0;
+		display: flex;
+	}
+	& svg {
+		width: 30px;
+		fill: $red-color;
+	}
+	// white border at the top of slider
+	&__topborder {
+		width: 100%;
+		height: 1px;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #fff;
+	}
+	// review text controls
+	&__text {
+		user-select: none;
+		width: 300px;
+		span {
+			font-family: "Haghisty_DEMO", sans-serif;
+		}
+	}
+	&__img {
+		width: 70px;
+		height: 100px;
+		object-fit: cover;
+		border-radius: 35px;
+	}
+	&__profile {
+		position: absolute;
+		left: 5rem;
+		bottom: -1.5rem;
+		display: flex;
+		flex-direction: column;
+		font-family: "Josefin Sans Std", sans-serif;
+	}
 }
