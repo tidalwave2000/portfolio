@@ -67,8 +67,9 @@
 		}
 	}
 }
+// swiper__wrapper with quotes
 .swiper__wrapper {
-	padding: 2rem 0;
+	padding: 15rem 0;
 }
 .swiper {
 	min-height: 500px;
@@ -101,6 +102,7 @@
 	&__text {
 		user-select: none;
 		width: 300px;
+		
 		span {
 			font-family: "Haghisty_DEMO", sans-serif;
 		}
