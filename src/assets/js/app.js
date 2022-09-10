@@ -60,8 +60,8 @@ let barInterval = setInterval(() => {
 	}
 }, 20);
 var swiper = new Swiper(".swiper", {
-	slidesPerView: 1,
-	spaceBetween: 30,
+	slidesPerView: 2,
+	spaceBetween: 10,
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
@@ -69,15 +69,15 @@ var swiper = new Swiper(".swiper", {
 });
 //  Reviews Swiper
 var swiper = new Swiper(".swiper", {
-	slidesPerView: 3,
-	spaceBetween: 30,
+	slidesPerView: 2,
+	spaceBetween: 10,
 	pagination: {
 		el: ".swiper-pagination",
 		clickable: true,
 	},
 	breakpoints: {
 		850: {
-			slidesPerView: 2,
+			slidesPerView: 1,
 		},
 		1400: {
 			slidesPerView: 3,

@@ -72,7 +72,8 @@
 	padding: 15rem 0;
 }
 .swiper {
-	min-height: 500px;
+	// min-height: 500px;
+	user-select: none;
 }
 .review {
 	position: relative;
@@ -102,7 +103,7 @@
 	&__text {
 		user-select: none;
 		width: 300px;
-		
+
 		span {
 			font-family: "Haghisty_DEMO", sans-serif;
 		}
@@ -121,4 +122,16 @@
 		flex-direction: column;
 		font-family: "Josefin Sans Std", sans-serif;
 	}
+}
+// blur the slider when not active
+.swiper-slide {
+	filter: blur(2px) !important;
+	transform: scale(0.8) !important;
+	transition: all 0.2s;
+}
+//un blur review when active
+.swiper-slide-active {
+	filter: blur(0) !important;
+	transform: scale(1) !important;
+	transition: all 0.2s ease-out;
 }
